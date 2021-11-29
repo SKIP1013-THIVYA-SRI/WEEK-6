@@ -1,0 +1,46 @@
+package exercise;
+import java.util.Scanner;
+
+public class Exercise3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		 * Write a program which calculates marks on basis of given grades in java using switch statement
+		 * if marks >=90 then Excellent: Grade A
+		 * if marks >=90 and less than 80  then Very Good: Grade B  
+		 * if marks >=80 and less than 70 then Good: Grade C 
+		 * if marks >=70 and less than 60 then Good: Grade D
+		 * if marks >=60 and less than 50 then Good: Grade E
+		 * if marks <=50 and less than 40 then Just Passed: Grade F
+		 * if any other marks then print Failed!
+		 */
+		int marks;
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter percentage marks :");
+		marks = scan.nextInt();
+		
+		if (marks >=90)
+			System.out.print("Excellent: Grade A");
+		
+		else if ((marks < 90) && (marks >= 80))
+			System.out.println("Very Good Grade B ");
+		
+		else if ((marks < 80) && (marks >= 70))
+			System.out.println("Good: Grade C ");
+		
+		else if ((marks < 70) && (marks >=60))
+			System.out.println("Good: Grade D ");
+		
+		else if ((marks < 60) && (marks >=50))
+			System.out.println("Good: Grade E");
+		
+		else if ((marks < 50 ) && (marks >= 40))
+			System.out.println("Good: Grade F");
+		
+		else
+			System.out.println("Failed");
+
+	}
+
+}
