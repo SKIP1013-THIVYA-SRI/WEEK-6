@@ -1,0 +1,35 @@
+package exercise;
+import java.util.Scanner;
+
+public class Exercise1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		 * Use scanner input, Enter integer number.
+		 * Jika  number sama dengan input number, 
+		 * print number tersebut
+		 * Katakan kamu ada 3 number iaitu 10, 20 dan 30.
+		 * Semak dengan input number
+		 */
+		int num;
+		int num1 = 10;
+		int num2 = 20;
+		int num3 = 30;
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter a number :");
+		num = scan.nextInt();
+		
+		if (num == num1)
+			System.out.print("You entered number " + num);
+		else if (num == num2)
+			System.out.print("You entered number " + num);
+		else if (num == num3)
+				System.out.print("You entered number " + num);
+		else 
+			System.out.print("Invalid number");
+
+	}
+
+}
